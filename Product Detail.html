@@ -10,6 +10,7 @@
             (function () {
                 function appendMetaTagAttributes(metaTag, attribute, values) {
                     var elem = document.querySelector("meta[name=" + metaTag + "]");
+                    
 
                     if (elem) {
                         var attrContent = elem.getAttribute(attribute);
@@ -22,6 +23,7 @@
                     appendMetaTagAttributes("viewport", "content", ["user-scalable=no", "minimum-scale=1.0"]);
                 }
             })();
+            
         </script>
         <script type="text/javascript">try { window.indexedDB; } catch { }</script>
         <script type="text/javascript" src="scripts/OutSystemsManifestLoader.js?Uno7DkMuu4+3RKfSExTIUg"></script>
@@ -201,6 +203,7 @@
             if (typeof navigator !== "undefined" && "serviceWorker" in navigator && !(/OutSystemsApp/i).test(navigator.userAgent)) { 
                 navigator.serviceWorker.register("pwaServiceWorker.js"); 
             } 
+            
         </script>
         <noscript><span>JavaScript is required</span></noscript>
         <script type="text/javascript" src="scripts/Swayyy.index.js?0GVHbyyS53xY0M2Pfyi1pQ"></script>    
